@@ -1,1 +1,1 @@
-# delete-later
+streamlit run dashboard.py

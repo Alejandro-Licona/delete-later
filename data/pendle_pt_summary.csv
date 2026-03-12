@@ -1,0 +1,17 @@
+chain,market,underlying,category,expiry,expired_in_period,entry_date,entry_implied_apy_pct,entry_underlying_apy_pct,avg_implied_apy_pct,avg_tvl_usd,data_days
+ethereum,PT-apyUSD-18JUN2026,apyUSD,stablecoin,2026-06-18,False,2026-03-01,18.0,146.43,15.12,4489886.0,12
+ethereum,PT-reUSDe-25JUN2026,reUSDe,stablecoin,2026-06-25,False,2026-01-01,14.86,13.06,13.47,3546077.0,71
+ethereum,PT-sNUSD-5MAR2026,sNUSD,stablecoin,2026-03-05,True,2026-01-01,13.57,13.62,12.51,39428240.0,63
+ethereum,PT-msY-9APR2026,msY,stablecoin,2026-04-09,False,2026-01-16,13.0,8.35,11.83,3093513.0,56
+ethereum,PT-jrNUSD-28MAY2026,jrNUSD,stablecoin,2026-05-28,False,2026-02-12,11.75,13.45,9.94,2361377.0,29
+ethereum,PT-ynRWAx-15OCT2026,ynRWAx,rwa,2026-10-15,False,2026-01-01,8.86,11.53,11.12,273202.0,71
+arbitrum,PT-thBILL-18JUN2026,thBILL,rwa,2026-06-18,False,2026-02-08,8.0,0.0,5.17,1515970.0,33
+arbitrum,PT-sUSDai-15OCT2026,sUSDai,stablecoin,2026-10-15,False,2026-02-13,7.61,1.67,8.5,7934330.0,28
+ethereum,PT-srUSDe-2APR2026,srUSDe,stablecoin,2026-04-02,False,2026-01-01,7.08,3.01,5.45,19124474.0,71
+ethereum,PT-iUSD-19FEB2026,iUSD,stablecoin,2026-02-19,True,2026-01-01,6.42,0.0,6.9,11738784.0,49
+ethereum,PT-sUSDE-5FEB2026,sUSDe,stablecoin,2026-02-05,True,2026-01-01,5.47,4.24,3.76,39473258.0,35
+arbitrum,PT-USDai-18JUN2026,USDai,stablecoin,2026-06-18,False,2026-02-15,5.04,0.0,5.78,565560.0,26
+ethereum,PT-USDe-5FEB2026,USDe,stablecoin,2026-02-05,True,2026-01-01,4.45,0.0,5.05,1201892.0,35
+arbitrum,PT-weETH-25JUN2026,weETH,eth,2026-06-25,False,2026-01-01,2.57,2.6,2.72,2818828.0,71
+arbitrum,PT-wstETH-25JUN2026,wstETH,eth,2026-06-25,False,2026-01-01,2.49,2.58,2.46,664453.0,71
+ethereum,PT-uniBTC-19FEB2026,uniBTC,btc,2026-02-19,True,2026-01-01,0.63,0.0,0.64,758773.0,49
