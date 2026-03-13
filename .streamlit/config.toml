@@ -1,0 +1,7 @@
+# Streamlit Cloud / production
+[server]
+headless = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false

@@ -11,6 +11,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from ws_exclusions import WS_EXCLUDE_PENDLE_PT, WS_EXCLUDE_PENDLE_LP
 
+# Plotly chart config: use Streamlit theme so charts load reliably on Cloud
+_PLOTLY_CHART_CONFIG = {"displayModeBar": True, "responsive": True}
+
 # ─── Page config (must be first Streamlit call) ──────────────────────────────
 st.set_page_config(
     page_title="White Star Capital | Strategy Tracker",
@@ -30,7 +33,8 @@ DASHBOARD_PASSWORD = "0xyield"
 C_WS = "#FFFFFF"
 
 # C_UNI       = "#6D28D9"   # purple — Uniswap MM
-C_UNI = "#802FFF"
+# C_UNI = "#802FFF"
+C_UNI = "#7DF9FF"
 
 # C_PENDLE    = "#047857"   # green — Pendle LP
 C_PENDLE    = "#2FFF2F"
@@ -545,7 +549,7 @@ def main():
         title=dict(text="", font=dict(size=13, color=c["subtext"]), x=0),
         yaxis_title="APY (%)",
     )
-    st.plotly_chart(fig_compare, use_container_width=True)
+    st.plotly_chart(fig_compare, use_container_width=True, theme="streamlit", config=_PLOTLY_CHART_CONFIG)
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 2 — White Star Composition
@@ -591,7 +595,7 @@ def main():
         fig_ws.update_layout(**layout_ws)
         fig_ws.update_yaxes(title_text="# Qualifying Positions", showgrid=True, gridcolor=c["grid"], linecolor=c["axis"], tickfont=dict(color=c["axis"]), title_font=dict(color=c["axis"]), secondary_y=False)
         fig_ws.update_yaxes(title_text="Portfolio APY (%)", ticksuffix="%", showgrid=False, linecolor=c["axis"], tickfont=dict(color=c["axis"]), title_font=dict(color=c["axis"]), secondary_y=True)
-        st.plotly_chart(fig_ws, use_container_width=True)
+        st.plotly_chart(fig_ws, use_container_width=True, theme="streamlit", config=_PLOTLY_CHART_CONFIG)
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 3 — Pool & Market Performance
@@ -621,7 +625,7 @@ def main():
                 xaxis=dict(showgrid=True, gridcolor=c["grid"], linecolor=c["axis"], tickfont=dict(color=c["axis"]), ticksuffix="%", zeroline=False),
                 yaxis=dict(showgrid=False, linecolor=c["axis"], tickfont=dict(color=c["axis"])), showlegend=False,
             )
-            st.plotly_chart(fig_u, use_container_width=True)
+            st.plotly_chart(fig_u, use_container_width=True, theme="streamlit", config=_PLOTLY_CHART_CONFIG)
         else:
             st.info("Pool summary not found.")
 
@@ -642,7 +646,7 @@ def main():
                 xaxis=dict(showgrid=True, gridcolor=c["grid"], linecolor=c["axis"], tickfont=dict(color=c["axis"]), ticksuffix="%", zeroline=False),
                 yaxis=dict(showgrid=False, linecolor=c["axis"], tickfont=dict(color=c["axis"])), showlegend=False,
             )
-            st.plotly_chart(fig_p, use_container_width=True)
+            st.plotly_chart(fig_p, use_container_width=True, theme="streamlit", config=_PLOTLY_CHART_CONFIG)
         else:
             st.info("Pendle metadata not found.")
 
@@ -671,7 +675,7 @@ def main():
             xaxis=dict(showgrid=True, gridcolor=c["grid"], linecolor=c["axis"], tickfont=dict(color=c["axis"]), ticksuffix="%", zeroline=False),
             yaxis=dict(showgrid=False, linecolor=c["axis"], tickfont=dict(color=c["axis"])), showlegend=False,
         )
-        st.plotly_chart(fig_pt, use_container_width=True)
+        st.plotly_chart(fig_pt, use_container_width=True, theme="streamlit", config=_PLOTLY_CHART_CONFIG)
 
     # ═══════════════════════════════════════════════════════════════════════════
     # Section 5 — Data Tables
