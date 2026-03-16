@@ -368,7 +368,7 @@ def fmt_apy(val):
     return f"{val:.1f}%" if pd.notna(val) else "—"
 
 
-def kpi_card(label: str, value: str, sub: str = "", color: str = C_TEXT_LIGHT) -> str:
+def kpi_card(label: str, value: str, sub: str = "", color: str = C_TEXT_DARK) -> str:
     return f"""
     <div class="kpi-card">
       <div class="kpi-label">{label}</div>
@@ -389,7 +389,7 @@ def main():
             "<h2 style='text-align:center; color:#1E40AF;'>White Star Capital — Strategy Tracker</h2>",
             unsafe_allow_html=True,
         )
-        st.markdown("<p style='text-align:center; color:#6B7280;'>Enter password to continue.</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align:center; color:#94A3B8;'>Enter password to continue.</p>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns([1, 1, 1])
         with col2:
             pwd = st.text_input("Password", type="password", key="dashboard_pwd", label_visibility="collapsed", placeholder="Password")
@@ -403,7 +403,7 @@ def main():
         st.stop()
 
     threshold = WS_APY_THRESHOLD
-    theme = _get_theme()
+    theme = "dark"
     c = _theme_colors(theme)
     plotly_layout = _plotly_layout(theme)
     chart_bg = c["card_bg"] if theme == "dark" else "white"
