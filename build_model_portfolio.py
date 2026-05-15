@@ -570,7 +570,7 @@ def print_report(
 
     # ── Strategy 2a: Pendle PT Hold-to-Maturity ──────────────────────────────
     print("\n── STRATEGY 2a: Pendle PT Hold-to-Maturity ───────────────────────")
-    print("Model: Enter PT on Jan 1 at implied APY. Hold to expiry for fixed yield.\n")
+    print("Model: Enter PT on Nov 1 at implied APY. Hold to expiry for fixed yield.\n")
 
     if not pt_summary.empty:
         display = pt_summary[["chain", "market", "underlying", "category", "expiry",

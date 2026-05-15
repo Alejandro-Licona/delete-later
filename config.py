@@ -2,12 +2,12 @@
 Strategy Tracker Configuration
 White Star Capital - DeFi Yield Desk
 Tracks: Uniswap V4 Market Making + Pendle PT/LP Hold-to-Maturity
-Period: Jan 1, 2026 – Mar 13, 2026
+Period: Nov 1, 2025 – Apr 1, 2026
 """
 
 # ─── Date Range ───────────────────────────────────────────────────────────────
-START_DATE = "2026-01-01T00:00:00Z"
-END_DATE = "2026-03-13T00:00:00Z"
+START_DATE = "2025-11-01T00:00:00Z"
+END_DATE   = "2026-04-01T00:00:00Z"
 
 # ─── API Keys & Base URLs ─────────────────────────────────────────────────────
 COINGECKO_API_KEY = "CG-mCzA4y4DKC4cGd7T3dCV2UAt"

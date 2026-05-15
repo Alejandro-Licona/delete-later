@@ -655,7 +655,7 @@ def main():
     # ═══════════════════════════════════════════════════════════════════════════
 
     st.markdown(
-        f'<div class="section-header" style="font-size:17px; font-weight:700; color:{c["header"]}; margin-top:12px; margin-bottom:6px; border-bottom:2px solid {c["header_border"]}; padding-bottom:6px;">Pendle PT — Entry Implied APY at Jan 1</div>',
+        f'<div class="section-header" style="font-size:17px; font-weight:700; color:{c["header"]}; margin-top:12px; margin-bottom:6px; border-bottom:2px solid {c["header_border"]}; padding-bottom:6px;">Pendle PT — Entry Implied APY at Nov 1</div>',
         unsafe_allow_html=True,
     )
 
